@@ -130,7 +130,7 @@ public class KayoTimePicker extends LinearLayout {
 
         sheetDialog = new IBottomSheetDialog(context);
         sheetDialog.setContentView(root);
-        sheetDialog.getBehavior().setBottomSheetCallback(new BottomSheetBehavior.BottomSheetCallback() {
+        sheetDialog.getBehavior().addBottomSheetCallback(new BottomSheetBehavior.BottomSheetCallback() {
             @Override
             public void onStateChanged(@NonNull View bottomSheet, int newState) {
                 sheetDialog.getBehavior().setState(BottomSheetBehavior.STATE_COLLAPSED);
