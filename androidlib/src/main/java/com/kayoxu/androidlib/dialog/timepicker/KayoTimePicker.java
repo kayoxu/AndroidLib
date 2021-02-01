@@ -13,13 +13,14 @@ import android.widget.*;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
-import com.bigkoo.pickerview.R;
+//import com.bigkoo.pickerview.R;
 import com.bigkoo.pickerview.builder.TimePickerBuilder;
 import com.bigkoo.pickerview.listener.OnTimeSelectChangeListener;
 import com.bigkoo.pickerview.listener.OnTimeSelectListener;
 import com.bigkoo.pickerview.view.TimePickerView;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.kayoxu.android.utils.timepicker.IBottomSheetDialog;
+import com.kayoxu.androidlib.R;
 
 
 import java.sql.Timestamp;
@@ -43,7 +44,7 @@ public class KayoTimePicker extends LinearLayout {
     private Context context;
 
     private TextView cancelBtn;
-    private Button okBtn;
+    private View okBtn;
     private TextView titleView, startTimeView, endTimeView;
     private TextView startTimeTitleView, endTimeTitleView;
     private FrameLayout endTimeRoot;
@@ -87,7 +88,7 @@ public class KayoTimePicker extends LinearLayout {
 
     private void initView(Context context) {
         this.context = context;
-        View root = LayoutInflater.from(context).inflate(R.layout.kayo_time_picker,
+        View root = LayoutInflater.from(context).inflate(R.layout.kayo_time_picker2,
                 this, true);
 
         cancelBtn = root.findViewById(R.id.cancelBtn);
