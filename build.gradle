@@ -22,6 +22,10 @@ allprojects {
     }
 }
 
+//todo 打包
+//https://jitpack.io/
+//https://github.com/kayoxu/AndroidLib.git
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
